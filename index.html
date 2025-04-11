@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms and Conditions</title>
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+  <div class="bg-white shadow-lg rounded-xl p-6 w-full max-w-lg">
+    <h1 class="text-2xl font-semibold mb-4 text-center">Terms and Conditions</h1>
+
+    <div class="space-y-2" id="terms-list">
+      <!-- Individual terms will be inserted here by JS -->
+    </div>
+
+    <!-- Check All Box -->
+    <div class="mt-4">
+      <label class="inline-flex items-center">
+        <input type="checkbox" id="check-all" class="mr-2">
+        <span class="font-medium text-gray-700">Check All</span>
+      </label>
+    </div>
+
+    <!-- Agree Button -->
+    <div class="mt-6">
+      <button id="agree-btn" class="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md disabled:opacity-50" disabled>
+        Agree
+      </button>
+    </div>
+
+    <!-- Success Message -->
+    <p id="success-msg" class="mt-4 text-green-600 font-medium hidden text-center">Thank you for agreeing to the terms!</p>
+  </div>
+</body>
+</html>
